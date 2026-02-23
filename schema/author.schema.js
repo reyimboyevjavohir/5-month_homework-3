@@ -1,0 +1,33 @@
+const Author = new Schema({
+    fullName: {
+        type: String,
+        required: true
+    },
+    birthDate: {
+        type: Date,
+        required: true
+    },
+    deathDate: {
+        type: Date,
+        required: true
+    },
+    period: {
+        type: String,
+        required: true
+    },
+    bio: {
+        type: String, 
+        required: true
+    },
+    work:{
+        type: String,
+        required: true
+    },
+    imageURL:{
+        type: String,
+        required: true
+    }
+});
+
+const AuthorSchema = model("author", Author);
+module.exports = AuthorSchema;
